@@ -53,7 +53,7 @@
     一般分两个阶段关闭 ExecutorService。第一阶段调用 shutdown 拒绝传入任务，然后调用 shutdownNow（如有必要）取消所有遗留的任务
 
 
-
+https://blog.csdn.net/tuke_tuke/article/details/51353925
 
 
 
