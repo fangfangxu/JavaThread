@@ -43,3 +43,27 @@
       意思就是如果你在你的task里会抛出checked或者unchecked exception，
       而你又希望外面的调用者能够感知这些exception并做出及时的处理，
       那么就需要用到submit，通过捕获Future.get抛出的异常。
+      
+四、shotdown（） showdownNow（）区别    
+
+    可以关闭 ExecutorService，这将导致其拒绝新任务。提供两个方法来关闭 ExecutorService。 
+    shutdown() 方法在终止前允许执行以前提交的任务， 
+    shutdownNow() 方法阻止等待任务启动并试图停止当前正在执行的任务。在终止时执行程序没有任务在执行
+    ，也没有任务在等待执行，并且无法提交新任务。关闭未使用的 ExecutorService 以允许回收其资源。 
+    一般分两个阶段关闭 ExecutorService。第一阶段调用 shutdown 拒绝传入任务，然后调用 shutdownNow（如有必要）取消所有遗留的任务
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
