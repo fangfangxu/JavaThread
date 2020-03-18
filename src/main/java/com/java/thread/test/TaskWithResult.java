@@ -21,10 +21,9 @@ public class TaskWithResult implements Callable<String> {
     public String call() throws Exception {
         System.out.println("call()方法被自动调用，干活！" + Thread.currentThread().getName());
 
-        if (new Random().nextBoolean()) {
+        if (id==2) {
             throw new TaskException("Meet error in task." + Thread.currentThread().getName());
         }
-         for(int i=999999999;i>0;i--){}
 
         return "call（）方法被自动调用，任务的结果是：" + id + "  " + Thread.currentThread().getName();
     }
