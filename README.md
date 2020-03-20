@@ -53,7 +53,10 @@
     一般分两个阶段关闭 ExecutorService。第一阶段调用 shutdown 拒绝传入任务，然后调用 shutdownNow（如有必要）取消所有遗留的任务
 
 
-https://blog.csdn.net/tuke_tuke/article/details/51353925
+五、
+（1）多线程注意：ArrayList多线程共享不安全
+（2）SimpleDateFormat线程不安全
+（3）线程池的队列大小小于任务数量、任务丢失，future.get会一直等待
 
 
 
